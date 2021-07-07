@@ -30,7 +30,7 @@ export const UpdootSection: React.FC<UpdootSectionProps> = ({ post }) => {
         isLoading={loadingState === "updoot-loading"}
         aria-label="updoot post"
         icon={<ChevronUpIcon />}
-      ></IconButton>
+      />
       {post.points}
       <IconButton
         onClick={async () => {
@@ -48,7 +48,7 @@ export const UpdootSection: React.FC<UpdootSectionProps> = ({ post }) => {
         isLoading={loadingState === "downdoot-loading"}
         aria-label="downdoot post"
         icon={<ChevronDownIcon />}
-      ></IconButton>
+      />
     </Flex>
   );
 };
